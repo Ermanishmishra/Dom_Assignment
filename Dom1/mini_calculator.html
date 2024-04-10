@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mini_calculator</title>
+</head>
+<style>
+    .input{
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        font-size: 50px;
+        font-weight: 700;
+    }
+    .container{
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+    }
+    .main{
+        width: 655px;
+        height: 200px;
+        box-shadow: rgba(206, 5, 5, 0.24) 0px 3px 8px ;
+        margin: auto;
+        margin-top: 15%;
+    }
+    #inp1{
+        font-size: 24px;
+    }
+    #inp2{
+        font-size: 24px;
+    }
+    button{
+        font-size: 24px;
+    }
+</style>
+<body>
+    <div class="main">
+    <div class="input">
+        <input id="inp1" placeholder="enter 1st number" type="number">
+        <input id="inp2" placeholder="enter 2nd number" type="number">
+    </div>
+    <div class="container">
+        <button onclick="Add()">Add</button>
+        <button onclick="Subtrack()">Subtract</button>
+        <button onclick="Multiply()">Multiply</button>
+        <button onclick="Divide()">Divide</button>
+    </div>
+    </div>
+</body>
+</html>
+<script>
+    let input1 = document.getElementById("inp1")
+    let input2 = document.getElementById("inp2")
+
+    let btn = document.querySelectorAll("button")
+
+    function Add(){
+       alert(Number(input1.value) + Number(input2.value))
+    }
+
+    function Subtrack(){
+       alert(Number(input1.value) - Number(input2.value))
+    }
+    
+    function Multiply(){
+       alert(Number(input1.value) * Number(input2.value))
+    }
+
+    function Divide(){
+       alert(Number(input1.value) / Number(input2.value))
+    }
+
+</script>

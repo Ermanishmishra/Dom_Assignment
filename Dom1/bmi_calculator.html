@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bmi_Calculator</title>
+</head>
+<style>
+    .container{
+        width: 50%;
+        height: 500px;
+        /* border: 1px solid red; */
+        margin: auto;
+        padding-left: 50px;
+        font-size: 20px;
+    }
+    input{
+        font-size: 25px;
+        border-radius: 5px;
+    }
+    button{
+        align-items: flex-start;
+        margin-right: 200px;
+        margin-top: 20px;
+        font-size: 25px;
+        border-radius: 5px;
+    }
+</style>
+<body>
+    <div class="container">
+     <h1>Check your BMI</h1>
+     <h3>Enter your weight and height below to Check your BMI results</h2>
+     <h3>Put your weight in here (KG)</h3>
+     <input type="number" id="inp1" placeholder="Enter Weight">
+     <h3>And your height here in (CM)</h3>
+     <input type="number" id="inp2" placeholder="Enter Height">
+     <button onclick="calculate()">Calculate BMI</button>
+     <h2 id="show"></h2>
+    </div>
+</body>
+</html>
+<script>
+
+    function calculate(){
+
+
+        let input1 = document.getElementById("inp1")
+        let input2 = document.getElementById("inp2")
+
+        let h2 = document.getElementById("show")
+        weight = Number(input1.value)
+        height = Number(input2.value)
+        BMI = weight*1000/(((height*height))/10)
+        
+        weight = Number(input1.value)
+        height = Number(input2.value)
+        BMI = weight*1000/(((height*height))/10)
+
+        if(BMI<=18.4){
+            // console.log("UnderWeight")
+            h2.innerHTML = `Your BMI is ${BMI} Which means you are UnderWeight`
+        }
+        else if(BMI>=18.5 && BMI<=24.9){
+            // console.log("Normal Weight")
+            h2.innerHTML = `Your BMI is ${BMI} Which means you are Normal Weight`
+        }
+        else if(BMI>=25 && BMI<=29.9){
+            // console.log("OverWeight")
+            h2.innerHTML = `Your BMI is ${BMI} Which means you are Overweight`
+        }
+        else{
+            // console.log("Obese",BMI)
+            h2.innerText = `Your BMI is ${BMI} Which means you are Obese`
+        }
+    }
+</script>

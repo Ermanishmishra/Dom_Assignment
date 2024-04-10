@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masai_investors</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+   
+    .main{
+        height: 400px;
+       
+        display: flex;
+        justify-content: space-evenly; 
+        margin: auto;
+        margin-top: 50px;
+    }
+    .patym{
+        width: 50px;
+        height: 20px;
+        border: 1px solid black;
+    }
+    .first{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        width: 300px;
+        height: 400px;
+        border-radius: 20px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+       
+    
+    }
+    p{
+        text-align: center;
+        padding-top: 4px;
+    }
+    .first>div>logo{
+        align-items: center;
+        width: 193px;
+        height: 57px;
+        max-width: 100%;
+        margin-left: 50px;
+    }
+    .pytm{
+        align-items: center;
+        width: 150px;
+        height: 45px;
+        max-width: 100%;
+        margin-left: 70px;
+        margin-bottom: 5px;
+ }
+
+
+ img{
+    width: 100%;
+ }
+
+ h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 30px;
+    font-weight: bold;
+ }
+ img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+ }
+</style>
+<body>
+    
+</body>
+<script>
+    let header = document.createElement("h1")
+    header.innerText = "Strategic Investors"
+    
+    let body1 = document.querySelector("body")
+    let container = document.createElement("div")
+
+    container.className = "main"
+
+    let box1 = document.createElement("div")
+    
+    box1.className = "first"  
+
+    let imgDiv = document.createElement("div")
+
+    let img = document.createElement("img")
+
+    img.src = "https://masai-website-images.s3.ap-south-1.amazonaws.com/Vijay_Shekhar_Sharma_Paytm_96f52579b8.jpg"
+   
+    
+    let p1 = document.createElement("p")
+
+    p1.innerText = "Vijay Shekhar Sharma"
+    p1.style.fontWeight = "bold"
+    p1.style.fontSize = "20px"
+
+    let p2 = document.createElement("p")
+    
+    p2.innerText = "Founder & CEO"
+
+    let logoDiv = document.createElement("div")
+    logoDiv.className = "start"
+
+    let logo = document.createElement("img")
+
+    logo.className = "pytm"
+
+    logo.src = "https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg"
+   
+
+
+    logoDiv.append(logo)
+   
+   
+   
+    imgDiv.append(img)
+    box1.append(imgDiv,p1,p2,logoDiv)
+    container.append(box1)
+    body1.append(container)
+
+
+
+    /* 2nd  */
+
+
+
+    let box2 = document.createElement("div")
+    
+    box2.className = "first"  
+
+    let imgDiv1 = document.createElement("div")
+
+    let img1 = document.createElement("img")
+
+    img1.src = "https://masai-website-images.s3.ap-south-1.amazonaws.com/Rectangle_427_637d69bb57.png"
+   
+    
+    let p11 = document.createElement("p")
+    p11.innerText = "Kunal Shah"
+    p11.style.fontWeight = "bold"
+    p11.style.fontSize = "20px"
+    let p12 = document.createElement("p")
+    
+    p12.innerText = "Founder"
+
+    let logoDiv1 = document.createElement("div")
+    logoDiv1.className = "start"
+    let logo1 = document.createElement("img")
+    logo1.className = "pytm"
+
+    logo1.src = "https://masai-website-images.s3.ap-south-1.amazonaws.com/cred_0a47d7b4f8.png"
+
+    logoDiv1.append(logo1)
+
+    imgDiv1.append(img1)
+    box2.append(imgDiv1,p11,p12,logoDiv1)
+    container.append(box2)
+    body1.append(container)
+   
+
+
+
+    /*  3rd  */
+
+
+
+    
+    let box3 = document.createElement("div")
+    
+    box3.className = "first"  
+
+    let imgDiv2 = document.createElement("div")
+
+    let img2 = document.createElement("img")
+
+    img2.src = "https://masai-website-images.s3.ap-south-1.amazonaws.com/amrish_rau_pine_labs_144e5e587c.jpg"
+   
+    
+    let p21 = document.createElement("p")
+     p21.innerText = "Amrish Rau"
+    p21.style.fontWeight = "bold"
+    p21.style.fontSize = "20px"
+    let p22 = document.createElement("p")
+    
+    p22.innerText = "CEO"
+
+    let logoDiv2 = document.createElement("div")
+    logoDiv2.className = "start"
+
+    let logo2 = document.createElement("img")
+    logo2.className = "pytm"
+
+    logo2.src = "https://masai-website-images.s3.ap-south-1.amazonaws.com/pine_labs_0aa2407434.png"
+
+    logoDiv2.append(logo2)
+
+    imgDiv2.append(img2)
+    box3.append(imgDiv2,p21,p22,logoDiv2)
+    container.append(box3)
+    body1.append(container)
+   
+
+
+    /* 4th  */  
+     
+
+     
+    let box4 = document.createElement("div")
+    
+    box4.className = "first"  
+
+    let imgDiv3 = document.createElement("div")
+
+    let img3 = document.createElement("img")
+
+    img3.src = "https://masai-website-images.s3.ap-south-1.amazonaws.com/Sampad_swain_Instamojo_f12bf6341e.jpg"
+   
+    
+    let p31 = document.createElement("p")
+    p31.innerText = "Sampad Swain"
+    p31.style.fontWeight = "bold"
+    p31.style.fontSize = "20px"
+    let p32 = document.createElement("p")
+    
+    p32.innerText = "Co-Founder & CEO"
+
+    let logoDiv3 = document.createElement("div")
+    logoDiv3.className = "start"
+
+    let logo3 = document.createElement("img")
+    logo3.className = "pytm"
+
+    logo3.src = "https://masai-website-images.s3.ap-south-1.amazonaws.com/instamojo_8763e704f7.png"
+
+    logoDiv3.append(logo3)
+
+    imgDiv3.append(img3)
+    box4.append(imgDiv3,p31,p32,logoDiv3)
+    container.append(box4)
+    body1.append(header,container)
+   
+   
+</script>
+</html>
